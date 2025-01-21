@@ -1,8 +1,8 @@
 {
-  "name": "MindApps PWA",
-  "short_name": "MindApps",
+  "name": "MINDapps",
+  "short_name": "MINDapps",
   "theme_color": "#ffffff",
-  "background_color": "#004740",
+  "background_color": "#ffffff",
   "display": "fullscreen",
   "orientation": "portrait",
   "scope": "/",
