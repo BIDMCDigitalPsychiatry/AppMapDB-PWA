@@ -38,10 +38,10 @@ export default function Home() {
     setIsMounted(true);
   }, []);
 
-  const installPrompt = installed === "1" || (isIOS && !isStandalone);
+  const installPrompt = installed === "1" ? false : isIOS && !isStandalone;
   const src = `https://mindapps.org/pwa?installPrompt=${installPrompt}`;
 
-  console.log({ src, i, installPrompt, isIOS, isStandalone });
+  console.log({ src, installed, installPrompt, isIOS, isStandalone });
 
   return (
     <div>
