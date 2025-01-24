@@ -44,20 +44,19 @@ export default function Home() {
   console.log({ src, installed, installPrompt, isIOS, isStandalone });
 
   return (
-    <div>
-      <main>
-        {isMounted && (
-          <iframe
-            style={{
-              display: "block",
-              height: "100vh",
-              width: "100vw",
-              border: "none",
-            }}
-            src={src}
-          />
-        )}
-      </main>
-    </div>
+    <main style={{ overscrollBehavior: "none" }}>
+      {isMounted && (
+        <iframe
+          style={{
+            display: "block",
+            height: "100vh",
+            width: "100vw",
+            border: "none",
+            overscrollBehavior: "none",
+          }}
+          src={src}
+        />
+      )}
+    </main>
   );
 }
