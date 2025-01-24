@@ -41,20 +41,17 @@ export default function Home() {
   const installPrompt = installed === "1" ? false : isIOS && !isStandalone;
   const src = `https://mindapps.org/pwa?installPrompt=${installPrompt}`;
 
-  console.log({ src, installed, installPrompt, isIOS, isStandalone });
+  // console.log({ src, installed, installPrompt, isIOS, isStandalone });
 
   return (
-    <main style={{ overscrollBehavior: "none" }}>
+    <main>
       {isMounted && (
         <iframe
-          scrolling="no"
           style={{
             display: "block",
             height: "100vh",
             width: "100vw",
             border: "none",
-            overscrollBehavior: "none",
-            overflow: "hidden",
           }}
           src={src}
         />
