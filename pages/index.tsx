@@ -47,12 +47,14 @@ export default function Home() {
     <main style={{ overscrollBehavior: "none" }}>
       {isMounted && (
         <iframe
+          scrolling="no"
           style={{
             display: "block",
             height: "100vh",
             width: "100vw",
             border: "none",
             overscrollBehavior: "none",
+            overflow: "hidden",
           }}
           src={src}
         />
